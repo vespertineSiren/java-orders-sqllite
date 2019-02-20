@@ -6,7 +6,13 @@ This is a basic database scheme with customers, orders, and sales agents.
 
 # Instructions
 
-Create a REST api server to store and read data from the provided SQLite Database called orders.db. The database is adapted from the sample database found at https://www.w3resource.com/sql/sql-table.php
+Create a REST api server to store and read data from the provided SQLite Database called orders.db. The database is adapted from the sample database found at https://www.w3resource.com/sql/sql-table.php. This a continuation of the java-orders project. So start with your java-orders project and proceed from there.
+
+* Convert to using SQLite
+* Add additional end points
+  * change end points so they return null when no data is found.
+  * change end points so they return data that is deleted or a new copy of updated data
+* Expose actuator end points
 
 The table layouts are as follows
 
