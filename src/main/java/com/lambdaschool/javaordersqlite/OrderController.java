@@ -28,9 +28,21 @@ public class OrderController {
     @Autowired
     OrderRepository orderRepository;
 
+
+
     @GetMapping("/customers")
     public List<Customer> getAllCustomers(){
         return customerRepository.findAll();
+    }
+
+    @GetMapping("/orders")
+    public List<Order> getALLOrders(){
+        return orderRepository.findAll();
+    }
+
+    @GetMapping("/agents")
+    public List<Agent> getALLAgents(){
+        return agentRepository.findAll();
     }
 
 }
