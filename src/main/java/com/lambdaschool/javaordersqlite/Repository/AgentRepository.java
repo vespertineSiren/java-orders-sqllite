@@ -8,6 +8,4 @@ import java.util.List;
 
 public interface AgentRepository extends JpaRepository<Agent, Long> {
 
-    @Query(value="SELECT A.*, C.custname, C.custcode as custcode FROM agents A, customers C WHERE A.agentcode = C.agentcode ")
-    List<Object[]> agentsWITHCustomers();
 }
