@@ -1,11 +1,13 @@
 package com.lambdaschool.javaordersqlite.Models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Set;
 
+@Data
 @Entity
-@Table(name="customer")
+@Table(name="customers")
 public class Customer {
 
     @Id
