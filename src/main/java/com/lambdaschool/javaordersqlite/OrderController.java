@@ -28,5 +28,9 @@ public class OrderController {
     @Autowired
     OrderRepository orderRepository;
 
+    @GetMapping("/customers")
+    public List<Customer> getAllCustomers(){
+        return customerRepository.findAll();
+    }
 
 }

@@ -19,8 +19,9 @@ public class Customer {
 
 
     private String custcity, workingarea, custcountry, grade, phone;
-    private double openingamt, receiveamt, paymentamt, oustandingamt;
+    private double openingamt, receiveamt, paymentamt, outstandingamt;
 
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "customer")
     private Set<Order> orders;
 

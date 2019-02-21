@@ -14,7 +14,7 @@ public class Agent {
     private long agentcode;
 
     private String agentname, workingarea, phone, country;
-    private double commision;
+    private double commission;
 
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "agent")
     private Set<Customer> customers;
