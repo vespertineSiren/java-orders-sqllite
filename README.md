@@ -58,13 +58,13 @@ The table layouts are as follows
 
 Expose the following end points
 
-* GET /customers - returns all the customer
-* GET /orders - return all the orders
-* GET /agents - return all the agents
+- [x]* GET /customers - returns all the customer
+- [x]* GET /orders - return all the orders
+- [x]* GET /agents - return all the agents
 
-* GET /customers/custcode/{custcode}
-* GET /orders/ordnum/{ordnum}
-* GET /agents/agentcode/{agentcode}
+- [x]* GET /customers/custcode/{custcode}
+- [x]* GET /orders/ordnum/{ordnum}
+- [x]* GET /agents/agentcode/{agentcode}
 
 * POST /customers - adds a customer
 * POST /orders - adds an order
