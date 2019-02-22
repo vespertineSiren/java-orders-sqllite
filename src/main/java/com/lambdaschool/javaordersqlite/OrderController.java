@@ -28,7 +28,7 @@ public class OrderController {
     @Autowired
     OrderRepository orderRepository;
 
-
+    //GetMapping - ALL
 
     @GetMapping("/customers")
     public List<Customer> getAllCustomers(){
@@ -44,5 +44,23 @@ public class OrderController {
     public List<Agent> getALLAgents(){
         return agentRepository.findAll();
     }
+
+    //GetMapping - Based on custcode/ordnum/agentcode
+
+    @GetMapping("/customers/custcode/{custcode}")
+    public Customer getCustomerBasedOnCustCode(@PathVariable long custcode) {
+        return customerRepository.findById(custcode).orElseThrow();
+    }
+
+    @GetMapping("/orders/ordnum/{ordnum}")
+    public Order getOrderBasedOnOrdnum(@PathVariable long ordnum) {
+        return orderRepository.findById(ordnum).orElseThrow();
+    }
+
+    @GetMapping("/agents/agentcode/{agentcode}")
+    public Agent getAgentBasedOnAgentcode(@PathVariable long agentcode) {
+        return agentRepository.findById(agentcode).orElseThrow();
+    }
+
 
 }
